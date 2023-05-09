@@ -32,4 +32,24 @@
         android:name="ru.mirea.komaristaya.mireaproject.WebViewFragment"
         android:label="fragment_web_view"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/backgroundTask"
+        android:name="ru.mirea.komaristaya.mireaproject.BackgroundTask"
+        android:label="fragment_background_task"
+        tools:layout="@layout/fragment_background_task" />
+    <fragment
+        android:id="@+id/datchik"
+        android:name="ru.mirea.komaristaya.mireaproject.Datchik"
+        android:label="fragment_datchik"
+        tools:layout="@layout/fragment_datchik" />
+    <fragment
+        android:id="@+id/notes"
+        android:name="ru.mirea.komaristaya.mireaproject.Notes"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/audioRecord"
+        android:name="ru.mirea.komaristaya.mireaproject.AudioRecord"
+        android:label="fragment_audio_record"
+        tools:layout="@layout/fragment_audio_record" />
 </navigation>

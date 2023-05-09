@@ -24,5 +24,22 @@
             android:id="@+id/webViewFragment"
             android:icon="@drawable/br"
             android:title="WebViewFragment" />
+        <item
+            android:id="@+id/backgroundTask"
+            android:icon="@drawable/campfire"
+            android:title="BackgroundTask" />
+        <item
+            android:id="@+id/datchik"
+            android:icon="@drawable/sen"
+            android:title="Sensor" />
+        <item
+            android:id="@+id/notes"
+            android:icon="@drawable/notes"
+            android:title="Notes" />
+        <item
+            android:id="@+id/audioRecord"
+            android:icon="@drawable/microphone"
+            android:title="AudioRecord" />
+
     </group>
 </menu>
