@@ -52,4 +52,24 @@
         android:name="ru.mirea.komaristaya.mireaproject.AudioRecord"
         android:label="fragment_audio_record"
         tools:layout="@layout/fragment_audio_record" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="ru.mirea.komaristaya.mireaproject.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/workFiles"
+        android:name="ru.mirea.komaristaya.mireaproject.workFiles"
+        android:label="fragment_work_files"
+        tools:layout="@layout/fragment_work_files" />
+    <fragment
+        android:id="@+id/yandexMap"
+        android:name="ru.mirea.komaristaya.mireaproject.YandexMap"
+        android:label="fragment_yandex_map"
+        tools:layout="@layout/fragment_yandex_map" />
+    <fragment
+        android:id="@+id/firebaseFragment"
+        android:name="ru.mirea.komaristaya.mireaproject.FirebaseFragment"
+        android:label="fragment_firebase"
+        tools:layout="@layout/fragment_firebase" />
 </navigation>

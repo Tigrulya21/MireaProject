@@ -40,6 +40,23 @@
             android:id="@+id/audioRecord"
             android:icon="@drawable/microphone"
             android:title="AudioRecord" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/workFiles"
+            android:icon="@drawable/files"
+            android:title="Files" />
+        <item
+            android:id="@+id/firebaseFragment"
+            android:icon="@drawable/firebaseicon"
+            android:title="Firebase" />
+        <item
+            android:id="@+id/yandexMap"
+            android:icon="@drawable/maps"
+            android:title="Map" />
+
 
     </group>
 </menu>

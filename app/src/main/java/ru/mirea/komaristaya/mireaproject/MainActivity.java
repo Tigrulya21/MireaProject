@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.dataFragment, R.id.webViewFragment, R.id.backgroundTask, R.id.datchik, R.id.notes, R.id.audioRecord)
+                R.id.dataFragment, R.id.webViewFragment, R.id.backgroundTask, R.id.datchik,
+                R.id.notes, R.id.audioRecord, R.id.profile, R.id.profile, R.id.firebaseFragment,R.id.yandexMap)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
