@@ -8,6 +8,7 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.work.Configuration;
 import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkManager;
 
@@ -95,6 +96,7 @@ public class BackgroundTask extends Fragment {
             @Override
             public void onClick(View view) {
                 //Enqueuing the work request
+                WorkManager.initialize(getContext(), new Configuration.Builder().build());
                 WorkManager.getInstance(view.getContext()).enqueue(workRequest);
             }
         });
