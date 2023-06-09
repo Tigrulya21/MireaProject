@@ -3,6 +3,7 @@ package ru.mirea.komaristaya.mireaproject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,7 +33,7 @@ public class FirebaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFirebaseBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        mAuth = FirebaseAuth.getInstance();
+
 
 
         binding.signedInButtons.setOnClickListener(new View.OnClickListener(){
@@ -69,11 +70,19 @@ public class FirebaseActivity extends AppCompatActivity {
                 updateUI(mAuth.getCurrentUser());
             }
         });
+        binding.exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirebaseActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
     public void onStart() {
         super.onStart();
+        mAuth = FirebaseAuth.getInstance();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser);

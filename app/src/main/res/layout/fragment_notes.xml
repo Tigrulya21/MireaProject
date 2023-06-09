@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F4E34A">
 
         <TextView
             android:id="@+id/Title"
@@ -45,5 +46,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="440dp"
+            android:layout_height="420dp"
+            android:layout_marginTop="22dp"
+            android:background="#F4E34A"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
